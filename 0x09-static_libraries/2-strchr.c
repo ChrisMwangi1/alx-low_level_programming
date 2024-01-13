@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _strchr - Converts c in a string to a character

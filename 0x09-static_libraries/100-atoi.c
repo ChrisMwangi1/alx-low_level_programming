@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _atoi - Converts a string to an int.
@@ -20,7 +20,7 @@ int _atoi(char *s)
 	while (s[y] <= '9' && (s[y] >= '0' && s[y] != '\0'))
 	{
 		z = (z * 10) + (s[y] - '0');
-		y++
+		y++;
 	}
 	z *= x;
 	return (z);

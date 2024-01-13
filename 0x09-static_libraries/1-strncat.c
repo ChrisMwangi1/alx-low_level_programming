@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _strncat - Joins two strings using n bytes from src.

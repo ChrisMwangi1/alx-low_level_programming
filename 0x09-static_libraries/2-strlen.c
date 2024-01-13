@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _strlen - Checks the length of a string.
