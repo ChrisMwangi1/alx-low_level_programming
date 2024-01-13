@@ -1,7 +1,7 @@
 include "main.h"
 
 /**
- * strcat - Concatenates two strings.
+ * _strcat - Concatenates two strings.
  * @dest: first value
  * @src: second value
  * Return: void

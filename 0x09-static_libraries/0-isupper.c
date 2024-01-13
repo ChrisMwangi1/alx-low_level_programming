@@ -1,7 +1,7 @@
 include "main.h"
 
 /**
- * isupper - Checks if character is uppercase
+ * _isupper - Checks if character is uppercase
  * @c: character to check
  * Return: 1(uppercase), otherwise 0
  */

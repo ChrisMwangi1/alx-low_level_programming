@@ -1,7 +1,7 @@
 include "main.h"
 
 /**
- * memset - Sets a specific value to a block of memory
+ * _memset - Sets a specific value to a block of memory
  * @s: Adress of block of memory
  * @b: Value
  * @n: Count bytes

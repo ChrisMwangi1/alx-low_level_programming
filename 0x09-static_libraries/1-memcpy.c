@@ -1,7 +1,7 @@
 include "main.h"
 
 /**
- * memcpy - Copies a memory adress.
+ * _memcpy - Copies a memory adress.
  * @dest: memory stored adress
  * @src: memory copied adress
  * @n: bytes number
@@ -13,7 +13,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	int x;
 	int y = n;
 
-	for (x = 0; x < i; x++);
+	for (x = 0; x < i; x++)
 	{
 		dest[x] = src[x];
 		n--;
