@@ -3,7 +3,6 @@
 /**
  * _puts - Writes a string to the stdout.
  * @s: string to write
- * _putchar, prints a new line
  */
 
 void _puts(char *s)
