@@ -8,39 +8,43 @@
  * Return: newly allocated space in memory which contains the contents of s1,
  * followed by the contents of s2
  */
-
 char *str_concat(char *s1, char *s2)
 {
-	char *x;
-	int y, z = 0;
+	size_t a, b, x, y;
+	char *z;
 
 	if (s1 == NULL)
-		s1 = "Betty";
+	{
+		s1 = "";
+	}
 	if (s2 == NULL)
-		s2 = "Holberton";
-
-	while (s1[y] != '\0')
-		y++;
-
-	while (s2[z] != '\0')
-		z++;
-
-	x = malloc(sizeof(char) * (y + z + 1));
-
-	if (x == NULL)
+	{
+		s2 = "";
+	}
+	a = 0;
+	while (s1[a] != '\0')
+	{
+		a++;
+	}
+	b = 0;
+	while (s2[b] != '\0')
+	{
+		b++;
+	}
+	z = malloc(sizeof(char) * (a + b + 1));
+	if (z == NULL)
+	{
+		free(z);
 		return (NULL);
-
-	while (s1[y] != '\0')
-	{
-		x[y] = s1[y];
-		y++;
 	}
-
-	while (s2[z] != '\0')
+	for (x = 0; x < a; x++)
 	{
-		x[z] = s2[z];
-		z++;
+		z[x] = s1[x];
 	}
-	x[y] = '\0';
-	return (x);
+	for (y = 0; y < b; y++)
+	{
+		z[x] = s2[y];
+		x++;
+	}
+	return (z);
 }
