@@ -19,7 +19,7 @@ void print_all(const char * const format, ...)
 		{
 			case 'c':
 				printf("%c", va_arg(t, int));
-				sp = 0;
+				sp = 0; /** Checks if condition is met */
 				break;
 			case 'i':
 				printf("%d", va_arg(t, int));
